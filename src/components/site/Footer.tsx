@@ -1,0 +1,42 @@
+import { Link } from "@tanstack/react-router";
+import logo from "@/assets/brand-logo.jpg.asset.json";
+import { Instagram, Facebook, Twitter } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer className="section-dark border-t border-border">
+      <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
+        <div className="md:col-span-2">
+          <img src={logo.url} alt="D' Valley's Arena" style={{ height: 56, width: "auto" }} className="brightness-0 invert mb-6" />
+          <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
+            A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge — under one roof.
+          </p>
+          <p className="text-xs tracking-[0.3em] uppercase text-amber-glow mt-6">Pour · Sip · Stir · Remember</p>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest text-white/50 mb-4">Explore</h4>
+          <ul className="space-y-2 text-sm">
+            <li><Link to="/events" className="hover:text-amber-glow transition-colors">Events</Link></li>
+            <li><Link to="/menu" className="hover:text-amber-glow transition-colors">Menu</Link></li>
+            <li><Link to="/about" className="hover:text-amber-glow transition-colors">About</Link></li>
+            <li><Link to="/contact" className="hover:text-amber-glow transition-colors">Contact</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest text-white/50 mb-4">Connect</h4>
+          <div className="flex gap-3">
+            <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Instagram size={16} /></a>
+            <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Facebook size={16} /></a>
+            <a href="#" aria-label="Twitter" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Twitter size={16} /></a>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-border">
+        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
+          <span>© {new Date().getFullYear()} D' Valley's Arena. All rights reserved.</span>
+          <span>Trendsetters aged 18–35 · Global family</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
