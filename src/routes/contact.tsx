@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import logo from "@/assets/brand-logo.jpg.asset.json";
+import logo from "@/assets/dvalleys-logo.jpg.asset.json";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Clock, MapPin, Mail } from "lucide-react";

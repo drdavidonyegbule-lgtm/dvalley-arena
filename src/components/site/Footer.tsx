@@ -1,16 +1,20 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/brand-logo.jpg.asset.json";
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import logo from "@/assets/dvalleys-logo.jpg.asset.json";
+import { Instagram, Facebook, Twitter, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="section-dark border-t border-border">
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <img src={logo.url} alt="D' Valley's Arena" style={{ height: 56, width: "auto" }} className="brightness-0 invert mb-6" />
+          <img src={logo.url} alt="D' Valley's Arena" style={{ height: 88, width: "auto" }} className="mb-6" />
           <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
             A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge — under one roof.
           </p>
+          <address className="not-italic mt-6 flex gap-3 items-start text-sm text-white/80 max-w-sm">
+            <MapPin size={16} className="text-amber-glow shrink-0 mt-0.5" />
+            <span>D' Valley's Arena, No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State.</span>
+          </address>
           <p className="text-xs tracking-[0.3em] uppercase text-amber-glow mt-6">Pour · Sip · Stir · Remember</p>
         </div>
         <div>
