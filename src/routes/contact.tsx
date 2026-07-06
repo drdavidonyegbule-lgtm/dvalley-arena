@@ -119,7 +119,7 @@ function ContactPage() {
 
             {[
               { icon: Clock, title: "Response Window", copy: "48 hours — always." },
-              { icon: MapPin, title: "Location", copy: "D' Valley's Arena · Global family HQ" },
+              { icon: MapPin, title: "Location", copy: "D' Valley's Arena, No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State." },
               { icon: Mail, title: "Direct Email", copy: "concierge@dvalleysarena.com" },
             ].map((c) => (
               <div key={c.title} className="rounded-sm border border-white/10 bg-card p-6 flex gap-4">
