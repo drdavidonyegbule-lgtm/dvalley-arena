@@ -26,6 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const heroSlides = [
+  { img: building.url, tag: "The Arena" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },
