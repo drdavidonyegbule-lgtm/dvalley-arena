@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Sparkles, Wine, Dumbbell, Music4, Coffee } from "lucide-react";
+import building from "@/assets/dvalleys-building.png.asset.json";
 import dining from "@/assets/dining.png.asset.json";
 import festival from "@/assets/lounge.jpg.asset.json"; // festival crowd (men laughing)
 import poolside from "@/assets/poolside.jpg.asset.json";
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const heroSlides = [
+  { img: building.url, tag: "The Arena" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },

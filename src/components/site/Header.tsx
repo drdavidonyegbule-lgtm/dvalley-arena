@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/brand-logo.jpg.asset.json";
+import logo from "@/assets/dvalleys-logo.jpg.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -33,8 +33,7 @@ export function Header() {
           <img
             src={logo.url}
             alt="D' Valley's Arena"
-            style={{ height: 48, width: "auto", objectFit: "contain" }}
-            className="brightness-0 invert"
+            style={{ height: 56, width: "auto", objectFit: "contain" }}
           />
         </Link>
 
