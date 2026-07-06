@@ -72,7 +72,7 @@ function ContactPage() {
           {/* Form */}
           <form onSubmit={onSubmit} className="lg:col-span-3 rounded-sm border border-amber-glow/30 bg-card p-8 md:p-10">
             <div className="flex justify-center pb-8 border-b border-border mb-8">
-              <img src={logo.url} alt="D' Valley's Arena" style={{ height: 56, width: "auto" }} className="brightness-0 invert opacity-90" />
+              <img src={logo.url} alt="D' Valley's Arena" style={{ height: 80, width: "auto" }} className="opacity-95" />
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
