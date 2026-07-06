@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import logo from "@/assets/brand-logo.jpg.asset.json";
+import logo from "@/assets/dvalleys-logo.jpg.asset.json";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Clock, MapPin, Mail } from "lucide-react";
@@ -72,7 +72,7 @@ function ContactPage() {
           {/* Form */}
           <form onSubmit={onSubmit} className="lg:col-span-3 rounded-sm border border-amber-glow/30 bg-card p-8 md:p-10">
             <div className="flex justify-center pb-8 border-b border-border mb-8">
-              <img src={logo.url} alt="D' Valley's Arena" style={{ height: 56, width: "auto" }} className="brightness-0 invert opacity-90" />
+              <img src={logo.url} alt="D' Valley's Arena" style={{ height: 80, width: "auto" }} className="opacity-95" />
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -119,7 +119,7 @@ function ContactPage() {
 
             {[
               { icon: Clock, title: "Response Window", copy: "48 hours — always." },
-              { icon: MapPin, title: "Location", copy: "D' Valley's Arena · Global family HQ" },
+              { icon: MapPin, title: "Location", copy: "D' Valley's Arena, No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State." },
               { icon: Mail, title: "Direct Email", copy: "concierge@dvalleysarena.com" },
             ].map((c) => (
               <div key={c.title} className="rounded-sm border border-white/10 bg-card p-6 flex gap-4">

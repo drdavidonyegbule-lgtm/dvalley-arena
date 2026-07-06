@@ -10,6 +10,8 @@ import lounge from "@/assets/lounge.jpg.asset.json";
 import cocktails from "@/assets/cocktails.jpg.asset.json";
 import diningSocial from "@/assets/dining-social.jpg.asset.json";
 import friends from "@/assets/logo.png.asset.json"; // four women milkshakes
+import gym from "@/assets/gym.png.asset.json";
+import brandLogo from "@/assets/dvalleys-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +37,7 @@ const heroSlides = [
 const pillars = [
   { title: "Hospitality", copy: "Seamless, luxury-grade service delivery.", img: dining.url, icon: Coffee },
   { title: "Entertainment", copy: "Immersive, high-energy programming every week.", img: festival.url, icon: Sparkles },
-  { title: "Gym & Fitness", copy: "Premium fitness environment with expert coaching.", img: null, icon: Dumbbell },
+  { title: "Gym & Fitness", copy: "Premium fitness environment with expert coaching.", img: gym.url, icon: Dumbbell },
   { title: "Clubbing & Nightlife", copy: "Electrifying atmosphere with world-class DJs.", img: nightlife.url, icon: Music4 },
   { title: "Lounge", copy: "Sophisticated, relaxed ambiance for every occasion.", img: lounge.url, icon: Wine },
 ];
@@ -119,18 +121,7 @@ function HomePage() {
                   "md:col-span-2 aspect-square"
                 }`}
               >
-                {p.img ? (
-                  <img src={p.img} alt={p.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                ) : (
-                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#1a1a1a,#0a0a0a)]">
-                    <div className="absolute inset-0" style={{
-                      backgroundImage:
-                        "linear-gradient(rgba(212,175,55,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.06) 1px, transparent 1px)",
-                      backgroundSize: "40px 40px",
-                    }}/>
-                    <Dumbbell className="absolute top-8 right-8 text-amber-glow/40" size={48}/>
-                  </div>
-                )}
+                <img src={p.img} alt={p.title} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${p.title === "Gym & Fitness" ? "brightness-75" : ""}`} />
                 <div className="absolute inset-0 vignette-bottom" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <div className="flex items-center gap-2 mb-2">
@@ -181,6 +172,21 @@ function HomePage() {
           <div className="mt-10">
             <Link to="/contact" className="btn-amber btn-amber-hover">Secure Access</Link>
           </div>
+        </div>
+      </section>
+
+      {/* BRAND MARK CLOSER */}
+      <section className="bg-black py-20 border-t border-border">
+        <div className="mx-auto max-w-4xl px-6 flex flex-col items-center text-center gap-6">
+          <img
+            src={brandLogo.url}
+            alt="D' Valley's Arena"
+            className="w-[280px] md:w-[420px] h-auto object-contain"
+          />
+          <p className="text-xs tracking-[0.5em] uppercase text-amber-glow">Pour · Sip · Stir · Remember</p>
+          <p className="text-sm text-muted-foreground max-w-md">
+            D' Valley's Arena · No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State.
+          </p>
         </div>
       </section>
     </>

@@ -33,7 +33,8 @@ export function Header() {
           <img
             src={logo.url}
             alt="D' Valley's Arena"
-            style={{ height: 56, width: "auto", objectFit: "contain" }}
+            style={{ height: 88, width: "auto", objectFit: "contain" }}
+            className="md:h-[104px]"
           />
         </Link>
 

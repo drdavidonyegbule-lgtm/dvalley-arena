@@ -1,17 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Bike } from "lucide-react";
 import dining from "@/assets/dining.png.asset.json";
-import cocktails from "@/assets/cocktails.jpg.asset.json";
-import lounge from "@/assets/lounge.jpg.asset.json";
+import foodPlate from "@/assets/food-plate.png.asset.json";
+import foodBag from "@/assets/food-bag.png.asset.json";
+import shakes from "@/assets/shakes.jpg.asset.json";
+import mixology from "@/assets/mixology.jpg.asset.json";
+import wings from "@/assets/wings.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
       { title: "Menu — D' Valley's Arena" },
-      { name: "description", content: "Gourmet cuisine, signature cocktails and premium bottle service at D' Valley's Arena. A menu that communicates luxury, energy and community." },
+      { name: "description", content: "Gourmet cuisine, signature cocktails, artisan shakes, and branded takeaway service at D' Valley's Arena." },
       { property: "og:title", content: "Menu — D' Valley's Arena" },
       { property: "og:description", content: "The menu communicates luxury, energy, and community." },
       { property: "og:url", content: "/menu" },
-      { property: "og:image", content: dining.url },
+      { property: "og:image", content: foodPlate.url },
     ],
     links: [{ rel: "canonical", href: "/menu" }],
   }),
@@ -57,19 +61,25 @@ function MenuPage() {
 
       <section className="pb-24">
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-5 gap-10">
-          {/* Sticky Visual */}
+          {/* Sticky Visual — asymmetrical two-column signature grid */}
           <div className="lg:col-span-2">
             <div className="lg:sticky lg:top-28 space-y-4">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-white/10">
-                <img src={dining.url} alt="D' Valley's signature service" className="w-full h-full object-cover" />
-                <div className="absolute inset-x-0 bottom-0 p-6 vignette-bottom">
-                  <p className="font-serif text-xl text-white leading-snug">
-                    "Every order is communicated to the kitchen within <em className="text-amber-glow not-italic">5 minutes</em> — ensuring peak presentation."
-                  </p>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-white/10 row-span-2">
+                  <img src={foodPlate.url} alt="Grilled wings, salad and gourmet plating" className="w-full h-full object-cover" />
+                  <div className="absolute inset-x-0 bottom-0 p-4 vignette-bottom">
+                    <span className="text-[0.6rem] tracking-[0.3em] uppercase text-amber-glow">Signature Plate</span>
+                  </div>
+                </div>
+                <div className="relative aspect-square overflow-hidden rounded-sm border border-white/10">
+                  <img src={foodBag.url} alt="Gourmet rice bowl with champagne" className="w-full h-full object-cover" />
+                </div>
+                <div className="relative aspect-square overflow-hidden rounded-sm border border-white/10">
+                  <img src={dining.url} alt="Service at D' Valley's" className="w-full h-full object-cover" />
                 </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                The menu communicates luxury, energy, and community. Sourced weekly. Prepared to order. Presented with intention.
+                The menu communicates luxury, energy, and community. Sourced weekly. Prepared to order. Presented with intention. Every ticket is fired within <span className="text-amber-glow">5 minutes</span>.
               </p>
             </div>
           </div>
@@ -103,27 +113,60 @@ function MenuPage() {
         </div>
       </section>
 
-      {/* Cocktail & Bottle Experience */}
+      {/* Dessert & Mixology Showcase */}
       <section className="section-dark py-24 border-t border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center">
-            <span className="text-xs tracking-[0.4em] uppercase text-amber-glow">The Cocktail & Bottle Experience</span>
-            <h2 className="mt-3 font-serif text-4xl md:text-6xl text-white">Premium mixology,<br/>day and night.</h2>
+            <span className="text-xs tracking-[0.4em] uppercase text-amber-glow">Desserts & Mixology</span>
+            <h2 className="mt-3 font-serif text-4xl md:text-6xl text-white">Sweet indulgence,<br/>crafted with theatre.</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { img: lounge.url, tag: "Nighttime", title: "Signature Cocktails" },
-              { img: cocktails.url, tag: "Daytime", title: "Poolside Sips" },
+              { img: shakes.url, tag: "Artisan Shakes", title: "Cookies, Cream & Confetti", copy: "Hand-spun shakes crowned with sprinkles, cotton candy and a full cookie stack." },
+              { img: mixology.url, tag: "Signature Mixology", title: "The Tall Pour", copy: "Chocolate-drizzled dessert cocktails engineered for the moment the lights drop." },
             ].map((c) => (
-              <article key={c.title} className="group relative overflow-hidden rounded-sm border border-white/10 aspect-[4/3]">
+              <article key={c.title} className="group relative overflow-hidden rounded-sm border border-white/10 aspect-[4/5]">
                 <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 vignette-bottom" />
                 <div className="absolute bottom-0 p-8">
                   <span className="text-[0.65rem] tracking-[0.35em] uppercase text-amber-glow">{c.tag}</span>
                   <h3 className="mt-2 font-serif text-3xl text-white">{c.title}</h3>
+                  <p className="mt-2 text-sm text-white/70 max-w-sm">{c.copy}</p>
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Takeaway / Delivery */}
+      <section className="py-24 border-t border-border">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid lg:grid-cols-2 gap-0 rounded-sm overflow-hidden border border-amber-glow/40 bg-card">
+            <div className="relative aspect-[4/3] lg:aspect-auto">
+              <img src={wings.url} alt="D' Valley's branded takeaway packaging" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="p-10 md:p-14 flex flex-col justify-center">
+              <div className="flex items-center gap-2 mb-5">
+                <Bike size={18} className="text-amber-glow" />
+                <span className="text-[0.65rem] tracking-[0.4em] uppercase text-amber-glow">Home Delivery & Pickup</span>
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl text-white leading-tight">A taste to remember —<br/>delivered.</h2>
+              <p className="mt-5 text-muted-foreground leading-relaxed">
+                Our full signature menu, plated for the road in D' Valley's branded packaging. Order via the concierge line, and we'll dispatch within the hour across Rivers State.
+              </p>
+              <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <div className="text-[0.6rem] tracking-[0.3em] uppercase text-white/50">Direct Line</div>
+                  <div className="text-amber-glow font-medium mt-1">0908 218 758</div>
+                </div>
+                <div>
+                  <div className="text-[0.6rem] tracking-[0.3em] uppercase text-white/50">Handle</div>
+                  <div className="text-white font-medium mt-1">@dvalleyarena</div>
+                </div>
+              </div>
+              <a href="/contact" className="btn-amber btn-amber-hover mt-10 self-start">Order Now</a>
+            </div>
           </div>
         </div>
       </section>
