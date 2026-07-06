@@ -174,6 +174,21 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* BRAND MARK CLOSER */}
+      <section className="bg-black py-20 border-t border-border">
+        <div className="mx-auto max-w-4xl px-6 flex flex-col items-center text-center gap-6">
+          <img
+            src={brandLogo.url}
+            alt="D' Valley's Arena"
+            className="w-[280px] md:w-[420px] h-auto object-contain"
+          />
+          <p className="text-xs tracking-[0.5em] uppercase text-amber-glow">Pour · Sip · Stir · Remember</p>
+          <p className="text-sm text-muted-foreground max-w-md">
+            D' Valley's Arena · No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
