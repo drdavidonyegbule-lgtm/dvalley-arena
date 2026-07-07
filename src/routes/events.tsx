@@ -5,7 +5,7 @@ import nightlife from "@/assets/nightlife.jpg.asset.json";
 import turf from "@/assets/turf.png.asset.json";
 import gym from "@/assets/gym.png.asset.json";
 import sipPaint from "@/assets/sip-paint.png.asset.json";
-import clubLogo from "@/assets/club-logo.jpg.asset.json";
+import clubLogo from "@/assets/club-logo-clean.png.asset.json";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -122,7 +122,7 @@ function EventsPage() {
             <img
               src={clubLogo.url}
               alt="D' Valley's Club"
-              className="h-28 w-28 md:h-36 md:w-36 object-contain invert mix-blend-screen"
+              className="h-28 w-28 md:h-36 md:w-36 object-contain invert"
             />
             <span className="mt-6 text-xs tracking-[0.5em] uppercase text-amber-glow">Nightlife Curation</span>
             <h2 className="mt-3 font-serif text-4xl md:text-6xl text-white leading-tight">D' Valley's Club<br/>after dark.</h2>
