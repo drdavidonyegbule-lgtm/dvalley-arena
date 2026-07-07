@@ -95,7 +95,10 @@ function MenuPage() {
                 </div>
                 <ul className="divide-y divide-border">
                   {sec.items.map((it) => (
-                    <li key={it.name} className="py-6 flex gap-6 items-baseline">
+                    <li key={it.name} className="py-6 flex gap-5 items-start">
+                      <div className="w-24 h-24 md:w-28 md:h-28 shrink-0 overflow-hidden rounded-sm border border-white/10">
+                        <img src={it.img} alt={it.name} loading="lazy" className="w-full h-full object-cover" />
+                      </div>
                       <div className="flex-1">
                         <div className="flex items-baseline justify-between gap-4">
                           <h3 className="font-serif text-xl text-white">{it.name}</h3>
@@ -144,7 +147,7 @@ function MenuPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-0 rounded-sm overflow-hidden border border-amber-glow/40 bg-card">
             <div className="relative aspect-[4/3] lg:aspect-auto">
-              <img src={wings.url} alt="D' Valley's branded takeaway packaging" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={deliveryBag.url} alt="D' Valley's Arena branded takeaway packaging" className="absolute inset-0 w-full h-full object-cover" />
             </div>
             <div className="p-10 md:p-14 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-5">
