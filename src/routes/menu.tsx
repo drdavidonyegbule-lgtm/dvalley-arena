@@ -5,7 +5,7 @@ import foodPlate from "@/assets/food-plate.png.asset.json";
 import foodBag from "@/assets/food-bag.png.asset.json";
 import shakes from "@/assets/shakes.jpg.asset.json";
 import mixology from "@/assets/mixology.jpg.asset.json";
-import wings from "@/assets/wings.jpg.asset.json";
+import deliveryBag from "@/assets/delivery-bag.png.png.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -26,25 +26,25 @@ const kitchen = [
   {
     section: "Signatures",
     items: [
-      { name: "Valley Wagyu Rice Bowl", copy: "Slow-braised wagyu, jollof-glazed rice, charred peppers.", price: "38" },
-      { name: "Amber Rack of Lamb", copy: "Honey-mustard crust, saffron jus, roasted heritage carrots.", price: "46" },
-      { name: "Truffle Yassa Chicken", copy: "Free-range poulet, caramelised onion, black truffle.", price: "34" },
+      { name: "Valley Wagyu Rice Bowl", copy: "Slow-braised wagyu, jollof-glazed rice, charred peppers.", price: "38", img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80&auto=format&fit=crop" },
+      { name: "Amber Rack of Lamb", copy: "Honey-mustard crust, saffron jus, roasted heritage carrots.", price: "46", img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80&auto=format&fit=crop" },
+      { name: "Truffle Yassa Chicken", copy: "Free-range poulet, caramelised onion, black truffle.", price: "34", img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&q=80&auto=format&fit=crop" },
     ],
   },
   {
     section: "Small Plates",
     items: [
-      { name: "Suya Tuna Tataki", copy: "Yellow-fin, suya crust, ponzu, micro cilantro.", price: "22" },
-      { name: "Plantain & Burrata", copy: "Sweet plantain, buffalo burrata, chilli honey.", price: "18" },
-      { name: "Crispy Salt Prawns", copy: "Tempura prawns, scotch bonnet aioli, lime.", price: "24" },
+      { name: "Suya Tuna Tataki", copy: "Yellow-fin, suya crust, ponzu, micro cilantro.", price: "22", img: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=400&q=80&auto=format&fit=crop" },
+      { name: "Plantain & Burrata", copy: "Sweet plantain, buffalo burrata, chilli honey.", price: "18", img: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400&q=80&auto=format&fit=crop" },
+      { name: "Crispy Salt Prawns", copy: "Tempura prawns, scotch bonnet aioli, lime.", price: "24", img: "https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab?w=400&q=80&auto=format&fit=crop" },
     ],
   },
   {
     section: "The Bar",
     items: [
-      { name: "Golden Valley", copy: "Bourbon, elderflower, gold leaf, smoked orange.", price: "19" },
-      { name: "Absolut Watermelon Spritz", copy: "Watermelon vodka, lime, prosecco, mint.", price: "17" },
-      { name: "Champagne Service", copy: "Curated selection from grower estates. Bottle from…", price: "120" },
+      { name: "Golden Valley", copy: "Bourbon, elderflower, gold leaf, smoked orange.", price: "19", img: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&q=80&auto=format&fit=crop" },
+      { name: "Absolut Watermelon Spritz", copy: "Watermelon vodka, lime, prosecco, mint.", price: "17", img: "https://images.unsplash.com/photo-1541107117648-3ee98c25da55?w=400&q=80&auto=format&fit=crop" },
+      { name: "Champagne Service", copy: "Curated selection from grower estates. Bottle from…", price: "120", img: "https://images.unsplash.com/photo-1549213783-8284d0336c4f?w=400&q=80&auto=format&fit=crop" },
     ],
   },
 ];
