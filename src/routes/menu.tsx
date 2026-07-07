@@ -161,7 +161,7 @@ function MenuPage() {
               <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <div className="text-[0.6rem] tracking-[0.3em] uppercase text-white/50">Direct Line</div>
-                  <div className="text-amber-glow font-medium mt-1">0908 218 758</div>
+                  <div className="text-amber-glow font-medium mt-1">0707 346 0398</div>
                 </div>
                 <div>
                   <div className="text-[0.6rem] tracking-[0.3em] uppercase text-white/50">Handle</div>
