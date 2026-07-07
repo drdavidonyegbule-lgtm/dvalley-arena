@@ -1,6 +1,15 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/dvalleys-logo.jpg.asset.json";
-import { Instagram, Facebook, Twitter, MapPin } from "lucide-react";
+import logo from "@/assets/dvalleys-logo-clean.png.asset.json";
+import { Instagram, MapPin } from "lucide-react";
+
+// Simple TikTok glyph (lucide has no official icon in this version)
+function TikTokIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M19.6 6.8a5.6 5.6 0 0 1-3.4-1.2 5.6 5.6 0 0 1-2.1-3.4h-3.3v13.4a2.7 2.7 0 1 1-2.7-2.7c.3 0 .5 0 .8.1V9.6a6 6 0 0 0-.8-.1 6 6 0 1 0 6 6V9.1a8.8 8.8 0 0 0 5.5 1.9V7.7c-.1 0-.1-.1 0-.9z"/>
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -29,15 +38,14 @@ export function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-widest text-white/50 mb-4">Connect</h4>
           <div className="flex gap-3">
-            <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Instagram size={16} /></a>
-            <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Facebook size={16} /></a>
-            <a href="#" aria-label="Twitter" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Twitter size={16} /></a>
+            <a href="https://instagram.com/dvalleyarena" aria-label="Instagram" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><Instagram size={16} /></a>
+            <a href="https://tiktok.com/@dvalleyarena" aria-label="TikTok" className="w-9 h-9 rounded-full border border-white/15 grid place-items-center hover:border-amber-glow hover:text-amber-glow transition-colors"><TikTokIcon size={16} /></a>
           </div>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} D' Valley's Arena. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} VGP Media Technologies. All rights reserved.</span>
           <span>Trendsetters aged 18–35 · Global family</span>
         </div>
       </div>
