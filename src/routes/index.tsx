@@ -9,9 +9,16 @@ import nightlife from "@/assets/nightlife.jpg.asset.json";
 import lounge from "@/assets/lounge.jpg.asset.json";
 import cocktails from "@/assets/cocktails.jpg.asset.json";
 import diningSocial from "@/assets/dining-social.jpg.asset.json";
-import friends from "@/assets/logo.png.asset.json"; // four women milkshakes
+import friends from "@/assets/logo.png.asset.json";
 import gym from "@/assets/gym.png.asset.json";
-import brandLogo from "@/assets/dvalleys-logo.jpg.asset.json";
+import brandLogo from "@/assets/dvalleys-logo-clean.png.asset.json";
+import scene25 from "@/assets/scene-25.jpg.asset.json";
+import scene21 from "@/assets/scene-21.jpg.asset.json";
+import scene23 from "@/assets/scene-23.jpg.asset.json";
+import scene30 from "@/assets/scene-30.jpg.asset.json";
+import scene33 from "@/assets/scene-33.jpg.asset.json";
+import scene34 from "@/assets/scene-34.jpg.asset.json";
+import scene37 from "@/assets/scene-37.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,6 +36,7 @@ export const Route = createFileRoute("/")({
 
 const heroSlides = [
   { img: building.url, tag: "The Arena" },
+  { img: scene25.url, tag: "D' Valley's Club" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },
@@ -42,7 +50,10 @@ const pillars = [
   { title: "Lounge", copy: "Sophisticated, relaxed ambiance for every occasion.", img: lounge.url, icon: Wine },
 ];
 
-const gallery = [poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url];
+const gallery = [
+  scene21.url, scene23.url, scene30.url, scene33.url, scene34.url, scene37.url,
+  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url,
+];
 
 function HomePage() {
   const [idx, setIdx] = useState(0);
