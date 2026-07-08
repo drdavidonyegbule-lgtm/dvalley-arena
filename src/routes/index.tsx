@@ -19,6 +19,7 @@ import scene30 from "@/assets/scene-30.jpg.asset.json";
 import scene33 from "@/assets/scene-33.jpg.asset.json";
 import scene34 from "@/assets/scene-34.jpg.asset.json";
 import scene37 from "@/assets/scene-37.jpg.asset.json";
+import gymHex from "@/assets/gym-hex.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +38,7 @@ export const Route = createFileRoute("/")({
 const heroSlides = [
   { img: building.url, tag: "The Arena" },
   { img: scene25.url, tag: "D' Valley's Club" },
+  { img: gymHex.url, tag: "Fitness Zone" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },

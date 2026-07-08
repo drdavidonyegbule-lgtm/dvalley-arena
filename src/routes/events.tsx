@@ -6,6 +6,7 @@ import turf from "@/assets/turf.png.asset.json";
 import gym from "@/assets/gym.png.asset.json";
 import sipPaint from "@/assets/sip-paint.png.asset.json";
 import clubLogo from "@/assets/club-logo-clean.png.asset.json";
+import heroVideo from "@/assets/events-hero.mp4.asset.json";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -59,7 +60,15 @@ function EventsPage() {
   return (
     <>
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <img src={festival.url} alt="D' Valley's Arena crowd" className="absolute inset-0 w-full h-full object-cover" />
+        <video
+          src={heroVideo.url}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={festival.url}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
         <div className="relative z-10 h-full flex flex-col items-center justify-end text-center px-6 pb-20 pt-32">
           <span className="text-xs tracking-[0.5em] uppercase text-amber-glow mb-4">Weekly Programming</span>
