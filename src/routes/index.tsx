@@ -38,11 +38,11 @@ export const Route = createFileRoute("/")({
 const heroSlides = [
   { img: building.url, tag: "The Arena" },
   { img: scene25.url, tag: "D' Valley's Club" },
-  { img: gymHex.url, tag: "Fitness Zone" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },
 ];
+
 
 const pillars = [
   { title: "Hospitality", copy: "Seamless, luxury-grade service delivery.", img: dining.url, icon: Coffee },
