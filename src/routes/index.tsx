@@ -54,8 +54,9 @@ const pillars = [
 
 const gallery = [
   scene21.url, scene23.url, scene30.url, scene33.url, scene34.url, scene37.url,
-  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url,
+  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url, gymHex.url,
 ];
+
 
 function HomePage() {
   const [idx, setIdx] = useState(0);
