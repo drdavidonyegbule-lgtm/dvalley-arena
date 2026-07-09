@@ -283,6 +283,11 @@ function MenuPage() {
                           src={it.img}
                           alt={it.alt}
                           loading="lazy"
+                          onError={(e) => {
+                            const el = e.currentTarget;
+                            const fb = categoryFallback(cat.name);
+                            if (el.src !== fb) el.src = fb;
+                          }}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                       </div>
