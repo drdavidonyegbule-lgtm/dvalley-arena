@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       { title: "D' Valley's Arena — Welcome to the Family" },
       { name: "description", content: "A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge for global trendsetters." },
       { property: "og:title", content: "D' Valley's Arena — Welcome to the Family" },
-      { property: "og:description", content: "Where great taste meets precious moments together." },
+      { property: "og:description", content: "A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge for global trendsetters." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
