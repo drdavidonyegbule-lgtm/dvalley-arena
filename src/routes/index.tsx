@@ -6,7 +6,7 @@ import dining from "@/assets/dining.png.asset.json";
 import festival from "@/assets/lounge.jpg.asset.json"; // festival crowd (men laughing)
 import poolside from "@/assets/poolside.jpg.asset.json";
 import nightlife from "@/assets/nightlife.jpg.asset.json";
-import lounge from "@/assets/lounge.jpg.asset.json";
+import lounge from "@/assets/lounge-friends.jpg.asset.json";
 import cocktails from "@/assets/cocktails.jpg.asset.json";
 import diningSocial from "@/assets/dining-social.jpg.asset.json";
 import friends from "@/assets/logo.png.asset.json";
