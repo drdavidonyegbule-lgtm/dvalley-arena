@@ -52,10 +52,10 @@ const tiers: Tier[] = [
       {
         name: "Soup",
         items: [
-          { name: "Afang Soup", price: "2,500", img: u("photo-1547592180-85f173990554"), alt: "Bowl of Afang soup with leafy waterleaf greens" },
-          { name: "Bitter-leaf Soup", price: "2,500", img: u("photo-1604908176997-125f25cc6f3d"), alt: "Bitter-leaf soup with assorted meat" },
-          { name: "Egusi Soup", price: "2,500", img: u("photo-1574484284002-952d92456975"), alt: "Thick egusi melon-seed soup with spinach" },
-          { name: "White Soup (Afia Efere)", price: "4,000", img: u("photo-1547424450-cdd75f677226"), alt: "Peppery white soup with catfish" },
+          { name: "Afang Soup", price: "2,500", img: afangImg.url, alt: "Bowl of Afang soup with leafy waterleaf greens and assorted meat" },
+          { name: "Bitter-leaf Soup", price: "2,500", img: bitterleafImg.url, alt: "Bitter-leaf soup with assorted meat and tripe" },
+          { name: "Egusi Soup", price: "2,500", img: egusiImg.url, alt: "Thick egusi melon-seed soup served with pounded yam" },
+          { name: "White Soup (Afia Efere)", price: "4,000", img: whiteSoupImg.url, alt: "Peppery white soup Afia Efere" },
         ],
       },
       {
