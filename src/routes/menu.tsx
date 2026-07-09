@@ -2,6 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Bike, UtensilsCrossed, Wine, Sparkles } from "lucide-react";
 import deliveryBag from "@/assets/delivery-bag.png.png.asset.json";
+import afangImg from "@/assets/afang.jpg.asset.json";
+import bitterleafImg from "@/assets/bitterleaf.jpg.asset.json";
+import egusiImg from "@/assets/egusi.jpg.asset.json";
+import whiteSoupImg from "@/assets/white-soup.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
