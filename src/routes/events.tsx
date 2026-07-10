@@ -1,13 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Crown, Clock, Users, Sparkles } from "lucide-react";
-import festival from "@/assets/lounge.jpg.asset.json";
-import nightlife from "@/assets/nightlife.jpg.asset.json";
-import turf from "@/assets/turf.png.asset.json";
-import gym from "@/assets/gym.png.asset.json";
-import sipPaint from "@/assets/sip-paint.png.asset.json";
-import clubLogo from "@/assets/club-logo-clean.png.asset.json";
-import heroVideo from "@/assets/events-hero.mp4.asset.json";
-
+const festival = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/c9d82373-9520-43b3-a108-a386037effe9/lounge.jpg" };
+const nightlife = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/89c5911b-0210-4197-bd66-146710ad303e/nightlife.jpg" };
+const turf = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/ec69c8de-f834-4b3d-976c-90eec53ae354/turf.png" };
+const gym = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/1c22a520-4399-4830-99c0-981626d39d1c/gym.png" };
+const sipPaint = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/41685bb5-be73-4f61-ad08-af9a1a0b428b/sip-paint.png" };
+const clubLogo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/52637487-a782-43a1-81ad-4859f6c9a0d7/club-logo-clean.png" };
+const heroVideo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/402bd1db-685c-4bf2-ac98-191a4e193388/events-hero.mp4" };
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [

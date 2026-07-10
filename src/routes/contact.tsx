@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import logo from "@/assets/dvalleys-logo-clean.png.asset.json";
+const logo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/7356f974-89dc-4c61-ace3-585f608c1cd8/dvalleys-logo-clean.png" };
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Clock, MapPin, Mail } from "lucide-react";
