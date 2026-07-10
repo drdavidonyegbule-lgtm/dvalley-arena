@@ -6,6 +6,10 @@ import afangImg from "@/assets/afang.jpg.asset.json";
 import bitterleafImg from "@/assets/bitterleaf.jpg.asset.json";
 import egusiImg from "@/assets/egusi.jpg.asset.json";
 import whiteSoupImg from "@/assets/white-soup.jpg.asset.json";
+import seafoodOkroImg from "@/assets/seafood-okro.jpg.asset.json";
+import nativeSoupImg from "@/assets/native-soup.jpg.asset.json";
+import catfishPeppersoupImg from "@/assets/catfish-peppersoup.jpg.asset.json";
+import goatPeppersoupImg from "@/assets/goat-peppersoup.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -15,9 +19,9 @@ export const Route = createFileRoute("/menu")({
       { name: "keywords", content: "D Valley's Arena menu, restaurant Bori Rivers State, Afang soup, Nkwobi, Isi Ewu, cocktails Rivers State, DVA special rice" },
       { property: "og:title", content: "Menu — D' Valley's Arena" },
       { property: "og:description", content: "Food, drinks and DVA specials — curated for the family." },
-      { property: "og:url", content: "/menu" },
+      { property: "og:url", content: "https://dvalleysarena.com/menu" },
     ],
-    links: [{ rel: "canonical", href: "/menu" }],
+    links: [{ rel: "canonical", href: "https://dvalleysarena.com/menu" }],
   }),
   component: MenuPage,
 });
@@ -61,10 +65,10 @@ const tiers: Tier[] = [
       {
         name: "Special Soup",
         items: [
-          { name: "Seafood Okro", price: "5,000", img: u("photo-1626804475297-41608ea09aeb"), alt: "Seafood okro soup with prawns and fish" },
-          { name: "Native Soup", price: "5,000", img: u("photo-1574484284002-952d92456975"), alt: "Rivers State native soup with periwinkles" },
-          { name: "Catfish Peppersoup", price: "3,000", img: u("photo-1547424450-cdd75f677226"), alt: "Steaming catfish peppersoup in dark broth" },
-          { name: "Goat meat Peppersoup", price: "3,000", img: u("photo-1625938144755-652e08e359b7"), alt: "Peppery goat meat peppersoup with spices" },
+          { name: "Seafood Okro", price: "5,000", img: seafoodOkroImg.url, alt: "Seafood okro soup with prawns, crab and fish" },
+          { name: "Native Soup", price: "5,000", img: nativeSoupImg.url, alt: "Rivers State native soup served with pounded yam" },
+          { name: "Catfish Peppersoup", price: "3,000", img: catfishPeppersoupImg.url, alt: "Steaming catfish peppersoup in bowl" },
+          { name: "Goat meat Peppersoup", price: "3,000", img: goatPeppersoupImg.url, alt: "Peppery goat meat peppersoup with spices" },
         ],
       },
       {

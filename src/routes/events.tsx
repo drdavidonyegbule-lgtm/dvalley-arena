@@ -15,10 +15,10 @@ export const Route = createFileRoute("/events")({
       { name: "description", content: "Ladies' Nights, football on the arena turf, fitness challenges, Sip & Paint evenings and VIP nightlife at D' Valley's Arena." },
       { property: "og:title", content: "Events at D' Valley's Arena" },
       { property: "og:description", content: "Immersive, high-energy programming every week." },
-      { property: "og:url", content: "/events" },
+      { property: "og:url", content: "https://dvalleysarena.com/events" },
       { property: "og:image", content: festival.url },
     ],
-    links: [{ rel: "canonical", href: "/events" }],
+    links: [{ rel: "canonical", href: "https://dvalleysarena.com/events" }],
   }),
   component: EventsPage,
 });
