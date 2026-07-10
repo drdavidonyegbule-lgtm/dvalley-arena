@@ -10,10 +10,10 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "D' Valley's Arena is a multi-concept lifestyle destination built around five pillars: hospitality, entertainment, fitness, nightlife and lounge." },
       { property: "og:title", content: "About D' Valley's Arena" },
       { property: "og:description", content: "More than a venue. A global family." },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://dvalleysarena.com/about" },
       { property: "og:image", content: poolside.url },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://dvalleysarena.com/about" }],
   }),
   component: AboutPage,
 });

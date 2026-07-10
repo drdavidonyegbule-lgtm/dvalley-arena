@@ -6,6 +6,10 @@ import afangImg from "@/assets/afang.jpg.asset.json";
 import bitterleafImg from "@/assets/bitterleaf.jpg.asset.json";
 import egusiImg from "@/assets/egusi.jpg.asset.json";
 import whiteSoupImg from "@/assets/white-soup.jpg.asset.json";
+import seafoodOkroImg from "@/assets/seafood-okro.jpg.asset.json";
+import nativeSoupImg from "@/assets/native-soup.jpg.asset.json";
+import catfishPeppersoupImg from "@/assets/catfish-peppersoup.jpg.asset.json";
+import goatPeppersoupImg from "@/assets/goat-peppersoup.jpg.asset.json";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -15,9 +19,9 @@ export const Route = createFileRoute("/menu")({
       { name: "keywords", content: "D Valley's Arena menu, restaurant Bori Rivers State, Afang soup, Nkwobi, Isi Ewu, cocktails Rivers State, DVA special rice" },
       { property: "og:title", content: "Menu — D' Valley's Arena" },
       { property: "og:description", content: "Food, drinks and DVA specials — curated for the family." },
-      { property: "og:url", content: "/menu" },
+      { property: "og:url", content: "https://dvalleysarena.com/menu" },
     ],
-    links: [{ rel: "canonical", href: "/menu" }],
+    links: [{ rel: "canonical", href: "https://dvalleysarena.com/menu" }],
   }),
   component: MenuPage,
 });

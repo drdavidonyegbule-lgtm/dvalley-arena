@@ -13,9 +13,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Private bookings, VIP tables and custom proposals at D' Valley's Arena. All inquiries answered within 48 hours." },
       { property: "og:title", content: "Contact D' Valley's Arena" },
       { property: "og:description", content: "Frictionless access. All inquiries answered within 48 hours." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://dvalleysarena.com/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://dvalleysarena.com/contact" }],
   }),
   component: ContactPage,
 });

@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+// lovable-error-reporting removed
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
@@ -34,7 +34,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    console.error("Root error:", error);
   }, [error]);
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -56,20 +56,29 @@ const jsonLd = {
     {
       "@type": ["NightClub", "Restaurant", "BarOrPub", "HealthClub"],
       "name": "D' Valley's Arena",
-      "description":
-        "A premier multi-concept lifestyle destination featuring hospitality, entertainment, fitness, nightlife, and lounge.",
-      "servesCuisine": "International",
+      "description": "A premier multi-concept lifestyle destination featuring hospitality, entertainment, fitness, nightlife, and lounge.",
+      "servesCuisine": "International, Nigerian",
       "priceRange": "$$$",
-      "url": "/",
+      "url": "https://dvalleysarena.com",
+      "telephone": "+2349067527359",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street",
+        "addressLocality": "Bori",
+        "addressRegion": "Rivers State",
+        "addressCountry": "NG"
+      },
       "slogan": "Where great taste meets precious moments together.",
+      "sameAs": ["https://www.instagram.com/dvalleyarena"]
     },
     {
       "@type": "Organization",
       "name": "D' Valley's Arena",
-      "url": "/",
-      "sameAs": ["https://instagram.com", "https://facebook.com"],
-    },
-  ],
+      "url": "https://dvalleysarena.com",
+      "telephone": "+2349067527359",
+      "sameAs": ["https://www.instagram.com/dvalleyarena"]
+    }
+  ]
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -84,11 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:title", content: "D' Valley's Arena — Welcome to the Family" },
       { property: "og:description", content: "A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge for global trendsetters." },
+      { name: "robots", content: "index, follow" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "D' Valley's Arena — Welcome to the Family" },
       { name: "twitter:description", content: "A premier multi-concept lifestyle destination. Hospitality, entertainment, fitness, nightlife and lounge for global trendsetters." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/543322d1-eabc-4ae6-bec3-1c1be013d12a" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/543322d1-eabc-4ae6-bec3-1c1be013d12a" },
+      { property: "og:image", content: "https://dvalleysarena.com/og-image.png" },
+      { name: "twitter:image", content: "https://dvalleysarena.com/og-image.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
