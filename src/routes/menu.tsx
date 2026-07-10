@@ -65,10 +65,10 @@ const tiers: Tier[] = [
       {
         name: "Special Soup",
         items: [
-          { name: "Seafood Okro", price: "5,000", img: u("photo-1626804475297-41608ea09aeb"), alt: "Seafood okro soup with prawns and fish" },
-          { name: "Native Soup", price: "5,000", img: u("photo-1574484284002-952d92456975"), alt: "Rivers State native soup with periwinkles" },
-          { name: "Catfish Peppersoup", price: "3,000", img: u("photo-1547424450-cdd75f677226"), alt: "Steaming catfish peppersoup in dark broth" },
-          { name: "Goat meat Peppersoup", price: "3,000", img: u("photo-1625938144755-652e08e359b7"), alt: "Peppery goat meat peppersoup with spices" },
+          { name: "Seafood Okro", price: "5,000", img: seafoodOkroImg.url, alt: "Seafood okro soup with prawns, crab and fish" },
+          { name: "Native Soup", price: "5,000", img: nativeSoupImg.url, alt: "Rivers State native soup served with pounded yam" },
+          { name: "Catfish Peppersoup", price: "3,000", img: catfishPeppersoupImg.url, alt: "Steaming catfish peppersoup in bowl" },
+          { name: "Goat meat Peppersoup", price: "3,000", img: goatPeppersoupImg.url, alt: "Peppery goat meat peppersoup with spices" },
         ],
       },
       {
