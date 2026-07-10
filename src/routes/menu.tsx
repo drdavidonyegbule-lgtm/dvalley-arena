@@ -1,16 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Bike, UtensilsCrossed, Wine, Sparkles } from "lucide-react";
-import deliveryBag from "@/assets/delivery-bag.png.png.asset.json";
-import afangImg from "@/assets/afang.jpg.asset.json";
-import bitterleafImg from "@/assets/bitterleaf.jpg.asset.json";
-import egusiImg from "@/assets/egusi.jpg.asset.json";
-import whiteSoupImg from "@/assets/white-soup.jpg.asset.json";
-import seafoodOkroImg from "@/assets/seafood-okro.jpg.asset.json";
-import nativeSoupImg from "@/assets/native-soup.jpg.asset.json";
-import catfishPeppersoupImg from "@/assets/catfish-peppersoup.jpg.asset.json";
-import goatPeppersoupImg from "@/assets/goat-peppersoup.jpg.asset.json";
-
+const deliveryBag = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/d487ce58-6b3f-4094-aebd-a584ddde176b/delivery-bag.png.png" };
+const afangImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/520d8d2c-c859-4866-8d8c-f75dcd3fd2a7/afang.jpg" };
+const bitterleafImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/fe10a607-bcba-4529-bacf-bbc5f2b24f70/bitterleaf.jpg" };
+const egusiImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/0be307ac-9325-47ac-a985-56b00d2cec49/egusi.jpg" };
+const whiteSoupImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/d8d1f067-a2b4-4d57-b073-5342331d27c9/white-soup.jpg" };
+const seafoodOkroImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/70cb0b89-d131-42f0-a3b2-78756c1d57ba/seafood-okro.jpg" };
+const nativeSoupImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/dcdae626-8c00-4659-bf8a-0fb32120f861/native-soup.jpg" };
+const catfishPeppersoupImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/eb395560-c197-4d44-bcd6-f48487963f28/catfish-peppersoup.jpg" };
+const goatPeppersoupImg = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/927a20b0-7c01-4b2c-8b79-b8d3c7588e82/goat-peppersoup.jpg" };
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [

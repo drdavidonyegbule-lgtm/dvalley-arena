@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/dvalleys-logo-clean.png.asset.json";
-
+const logo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/7356f974-89dc-4c61-ace3-585f608c1cd8/dvalleys-logo-clean.png" };
 const nav = [
   { to: "/", label: "Home" },
   { to: "/events", label: "Events" },

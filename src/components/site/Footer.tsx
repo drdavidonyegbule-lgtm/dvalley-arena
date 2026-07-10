@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/dvalleys-logo-clean.png.asset.json";
+const logo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/7356f974-89dc-4c61-ace3-585f608c1cd8/dvalleys-logo-clean.png" };
 import { Instagram, MapPin } from "lucide-react";
 
 // Simple TikTok glyph (lucide has no official icon in this version)
