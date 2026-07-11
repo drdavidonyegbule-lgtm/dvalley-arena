@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-const poolside = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/d86370a9-0ab9-4eb6-b370-e0084058ffa8/poolside.jpg" };
-const diningSocial = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/a91d0070-d63e-4acc-bef5-cef3d849210f/dining-social.jpg" };
+const poolside = { url: "/poolside.jpg" };
+const diningSocial = { url: "/dining-social.jpg" };
 import { Award, Heart, Zap, Shield } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
