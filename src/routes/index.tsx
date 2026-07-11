@@ -1,25 +1,25 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Sparkles, Wine, Dumbbell, Music4, Coffee } from "lucide-react";
-const building = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/442a384a-4e01-48fe-85c5-fe47e4808f5f/dvalleys-building.png" };
-const dining = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/a5c22cb1-d315-4620-a711-329e55e6fe59/dining.png" };
-const festival = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/c9d82373-9520-43b3-a108-a386037effe9/lounge.jpg" }; // festival crowd (men laughing)
-const poolside = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/d86370a9-0ab9-4eb6-b370-e0084058ffa8/poolside.jpg" };
-const nightlife = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/89c5911b-0210-4197-bd66-146710ad303e/nightlife.jpg" };
-const lounge = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/72dda1b8-4299-4339-940e-55ea45f26251/lounge-friends.jpg" };
-const cocktails = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/64a568b5-5cd7-4d4e-b5dc-298bf4255c30/cocktails.jpg" };
-const diningSocial = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/a91d0070-d63e-4acc-bef5-cef3d849210f/dining-social.jpg" };
-const friends = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/737df65f-fe06-4b23-a8c6-e3934f85bbd7/logo.png" };
-const gym = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/1c22a520-4399-4830-99c0-981626d39d1c/gym.png" };
-const brandLogo = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/7356f974-89dc-4c61-ace3-585f608c1cd8/dvalleys-logo-clean.png" };
-const scene25 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/1f436418-048a-4402-ad3d-8b00972567e7/scene-25.jpg" };
-const scene21 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/32f7e4e0-a718-4a04-8514-4e43c9c53c95/scene-21.jpg" };
-const scene23 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/d459f8ce-5990-45aa-a54d-08b406aa5958/scene-23.jpg" };
-const scene30 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/c510d8ce-3d1b-469c-b008-12321cec87c0/scene-30.jpg" };
-const scene33 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/73cdeb48-1bbd-4a16-8888-559cb8cac57e/scene-33.jpg" };
-const scene34 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/62def491-c076-4e50-9e54-a352e8cb2095/scene-34.jpg" };
-const scene37 = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/3704806a-e914-4d46-bbcb-98b348c7a048/scene-37.jpg" };
-const gymHex = { url: "https://dvalley-arena.lovable.app/__l5e/assets-v1/7cff63e4-308d-442c-a58c-cb72abc28c2d/gym-hex.jpg" };
+const building = { url: "/dvalleys-building.png" };
+const dining = { url: "/dining.png" };
+const festival = { url: "/lounge.jpg" }; // festival crowd (men laughing)
+const poolside = { url: "/poolside.jpg" };
+const nightlife = { url: "/nightlife.jpg" };
+const lounge = { url: "/lounge-friends.jpg" };
+const cocktails = { url: "/cocktails.jpg" };
+const diningSocial = { url: "/dining-social.jpg" };
+const friends = { url: "/logo.png" };
+const gym = { url: "/gym.png" };
+const brandLogo = { url: "/dvalleys-logo-clean.png" };
+const scene25 = { url: "/scene-25.jpg" };
+const scene21 = { url: "/scene-21.jpg" };
+const scene23 = { url: "/scene-23.jpg" };
+const scene30 = { url: "/scene-30.jpg" };
+const scene33 = { url: "/scene-33.jpg" };
+const scene34 = { url: "/scene-34.jpg" };
+const scene37 = { url: "/scene-37.jpg" };
+const gymHex = { url: "/gym-hex.jpg" };
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
