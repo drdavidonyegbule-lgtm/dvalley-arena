@@ -73,7 +73,7 @@ const tiers: Tier[] = [
       {
         name: "Proteins",
         items: [
-          { name: "Turkey", price: "9,000", img: "/chicken.jpg", alt: "Grilled turkey portion, seasoned" },
+          { name: "Turkey", price: "9,000", img: "/turkey.jpg", alt: "Grilled turkey portion, seasoned" },
           { name: "Chicken Wings", price: "2,500", img: "/chicken-wings.png", alt: "Crispy grilled chicken wings" },
           { name: "Chicken", price: "4,000", img: "/chicken.jpg", alt: "Grilled chicken plate" },
           { name: "Peppered Snail", price: "15,000", img: "/peppered-snail.jpg", alt: "Peppered snail delicacy in rich sauce" },
@@ -190,7 +190,7 @@ const tiers: Tier[] = [
         items: [
           { name: "Breakfast Banana Smoothie", price: "7,000", img: "/Banana-Breakfast-Smoothie.png", alt: "Banana breakfast smoothie in glass" },
           { name: "Something Nutty", price: "8,000", img: "/nutty-smoothie.png", alt: "Nutty smoothie with almonds" },
-          { name: "Weight-Gain Smoothie", price: "8,000", img: "/fruity-smoothie.png", alt: "Protein weight-gain smoothie in tall glass" },
+          { name: "Weight-Gain Smoothie", price: "8,000", img: "/Weight-gain smoothie.png", alt: "Protein weight-gain smoothie in tall glass" },
           { name: "Fruity Smoothie", price: "7,000", img: "/fruity-smoothie.png", alt: "Colourful fruity smoothie" },
         ],
       },
