@@ -190,7 +190,7 @@ const tiers: Tier[] = [
         items: [
           { name: "Breakfast Banana Smoothie", price: "7,000", img: "/Banana-Breakfast-Smoothie.png", alt: "Banana breakfast smoothie in glass" },
           { name: "Something Nutty", price: "8,000", img: "/nutty-smoothie.png", alt: "Nutty smoothie with almonds" },
-          { name: "Weight-Gain Smoothie", price: "8,000", img: "/Weight-gain smoothie.png", alt: "Protein weight-gain smoothie in tall glass" },
+          { name: "Weight-Gain Smoothie", price: "8,000", img: "/Weight-gain smoothie.jpg", alt: "Protein weight-gain smoothie in tall glass" },
           { name: "Fruity Smoothie", price: "7,000", img: "/fruity-smoothie.png", alt: "Colourful fruity smoothie" },
         ],
       },
