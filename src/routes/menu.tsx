@@ -55,10 +55,10 @@ const tiers: Tier[] = [
       {
         name: "Soup",
         items: [
-          { name: "Afang Soup", price: "2,500", img: afangImg.url, alt: "Bowl of Afang soup with leafy waterleaf greens and assorted meat" },
-          { name: "Bitter-leaf Soup", price: "2,500", img: bitterleafImg.url, alt: "Bitter-leaf soup with assorted meat and tripe" },
-          { name: "Egusi Soup", price: "2,500", img: egusiImg.url, alt: "Thick egusi melon-seed soup served with pounded yam" },
-          { name: "White Soup (Afia Efere)", price: "4,000", img: whiteSoupImg.url, alt: "Peppery white soup Afia Efere" },
+          { name: "Afang Soup", price: "3,500", img: afangImg.url, alt: "Bowl of Afang soup with leafy waterleaf greens and assorted meat" },
+          { name: "Bitter-leaf Soup", price: "3,000", img: bitterleafImg.url, alt: "Bitter-leaf soup with assorted meat and tripe" },
+          { name: "Egusi Soup", price: "3,000", img: egusiImg.url, alt: "Thick egusi melon-seed soup served with pounded yam" },
+          { name: "White Soup (Afia Efere)", price: "4,500", img: whiteSoupImg.url, alt: "Peppery white soup Afia Efere" },
         ],
       },
       {
@@ -66,8 +66,8 @@ const tiers: Tier[] = [
         items: [
           { name: "Seafood Okro", price: "5,000", img: seafoodOkroImg.url, alt: "Seafood okro soup with prawns, crab and fish" },
           { name: "Native Soup", price: "5,000", img: nativeSoupImg.url, alt: "Rivers State native soup served with pounded yam" },
-          { name: "Catfish Peppersoup", price: "3,000", img: catfishPeppersoupImg.url, alt: "Steaming catfish peppersoup in bowl" },
-          { name: "Goat meat Peppersoup", price: "3,000", img: goatPeppersoupImg.url, alt: "Peppery goat meat peppersoup with spices" },
+          { name: "Catfish Peppersoup", price: "4,000", img: catfishPeppersoupImg.url, alt: "Steaming catfish peppersoup in bowl" },
+          { name: "Goat meat Peppersoup", price: "4,000", img: goatPeppersoupImg.url, alt: "Peppery goat meat peppersoup with spices" },
         ],
       },
       {
@@ -75,14 +75,14 @@ const tiers: Tier[] = [
         items: [
           { name: "Turkey", price: "9,000", img: "/turkey.jpg", alt: "Grilled turkey portion, seasoned" },
           { name: "Chicken Wings", price: "2,500", img: "/chicken-wings.png", alt: "Crispy grilled chicken wings" },
-          { name: "Chicken", price: "4,000", img: "/chicken.jpg", alt: "Grilled chicken plate" },
-          { name: "Peppered Snail", price: "15,000", img: "/peppered-snail.jpg", alt: "Peppered snail delicacy in rich sauce" },
+          { name: "Chicken", price: "4,500", img: "/chicken.jpg", alt: "Grilled chicken plate" },
+          { name: "Peppered Snail", price: "3,000", img: "/peppered-snail.jpg", alt: "Peppered snail delicacy in rich sauce" },
         ],
       },
       {
         name: "Extras",
         items: [
-          { name: "French Fries", price: "15,000", img: "/french-fries.jpg", alt: "Golden crispy French fries" },
+          { name: "French Fries", price: "3,000", img: "/french-fries.jpg", alt: "Golden crispy French fries" },
           { name: "Small Chops (Beef/Chicken)", price: "1,500", img: "/small-chops.png", alt: "Nigerian small chops platter — samosas and puff-puff" },
           { name: "Nkwobi", price: "10,000", img: "/nkwobi.jpg", alt: "Traditional Nkwobi spiced cow-foot" },
           { name: "Isi Ewu", price: "15,000", img: "/isi-ewu.png", alt: "Isi Ewu — spiced goat head delicacy" },
@@ -91,10 +91,10 @@ const tiers: Tier[] = [
       {
         name: "Rice & Pasta",
         items: [
-          { name: "Jollof Rice", price: "2,800", img: "/jollof-rice.jpeg", alt: "Nigerian party jollof rice" },
-          { name: "Coconut Rice", price: "3,200", img: "/coconut-rice.jpg", alt: "Fragrant coconut rice plated" },
-          { name: "Fried Rice", price: "2,800", img: "/fried-rice.jpg", alt: "Nigerian fried rice with vegetables" },
-          { name: "Asun Rice", price: "2,000", img: "/asun-rice.jpeg", alt: "Asun rice topped with spiced goat meat" },
+          { name: "Jollof Rice", price: "3,000", img: "/jollof-rice.jpeg", alt: "Nigerian party jollof rice" },
+          { name: "Coconut Rice", price: "4,000", img: "/coconut-rice.jpg", alt: "Fragrant coconut rice plated" },
+          { name: "Fried Rice", price: "3,500", img: "/fried-rice.jpg", alt: "Nigerian fried rice with vegetables" },
+          { name: "Asun Rice", price: "4,000", img: "/asun-rice.jpeg", alt: "Asun rice topped with spiced goat meat" },
         ],
       },
     ],
@@ -108,10 +108,10 @@ const tiers: Tier[] = [
       {
         name: "Wine",
         items: [
-          { name: "Four Cousins", price: "15,000", img: "/four-cousins.jpg", alt: "Bottle of red wine, sweet varietal" },
+          { name: "Four Cousins", price: "19,500", img: "/four-cousins.jpg", alt: "Bottle of red wine, sweet varietal" },
           { name: "Carlo Rossi Red", price: "25,000", img: "/carlo-rossi-red.png", alt: "Large red wine bottle with glass" },
-          { name: "4th Street (Red)", price: "10,000", img: "/4th-street-red.png", alt: "Red wine served in a glass" },
-          { name: "Andre Rose", price: "20,000", img: "/andre-rose.jpg", alt: "Chilled rose sparkling wine" },
+          { name: "4th Street (Red)", price: "18,000", img: "/4th-street-red.png", alt: "Red wine served in a glass" },
+          { name: "Andre Rose", price: "23,000", img: "/andre-rose.jpg", alt: "Chilled rose sparkling wine" },
         ],
       },
       {
@@ -119,17 +119,17 @@ const tiers: Tier[] = [
         items: [
           { name: "Red Bull", price: "3,000", img: "/red-bull.png", alt: "Chilled energy drink can on ice" },
           { name: "Monster Energy", price: "2,000", img: "/monster-energy.png", alt: "Energy drink can, chilled" },
-          { name: "Heineken Can", price: "1,500", img: "/heineken.png", alt: "Chilled green beer can" },
-          { name: "Desperado Big Can", price: "3,000", img: "/desperados.jpg", alt: "Tequila-flavoured beer can" },
+          { name: "Heineken Can", price: "3,000", img: "/heineken.png", alt: "Chilled green beer can" },
+          { name: "Desperado Big Can", price: "3,500", img: "/desperados.jpg", alt: "Tequila-flavoured beer can" },
         ],
       },
       {
         name: "Spirits & Liquors",
         items: [
           { name: "Campari 1L", price: "31,000", img: "/campari.png", alt: "Bottle of red bitter aperitif" },
-          { name: "Smirnoff Vodka XL", price: "8,000", img: "/Smirnoff-chocolate-vodka-2.png", alt: "Clear vodka bottle on bar" },
+          { name: "Smirnoff Vodka XL", price: "12,000", img: "/Smirnoff-chocolate-vodka-2.png", alt: "Clear vodka bottle on bar" },
           { name: "Beefeater Gin", price: "25,000", img: "/beefeater-gin.png", alt: "London Dry gin bottle" },
-          { name: "Jagermeister", price: "9,000", img: "/jagermeister.png", alt: "Herbal digestif liqueur bottle" },
+          { name: "Jagermeister", price: "40,000", img: "/jagermeister.png", alt: "Herbal digestif liqueur bottle" },
         ],
       },
       {
@@ -171,17 +171,17 @@ const tiers: Tier[] = [
         name: "DVA's Special Rice",
         items: [
           { name: "DVA's Special Rice", price: "10,000", img: "/DVA-special-rice.png", alt: "DVA signature jollof rice with shrimps and minced meat" },
-          { name: "Jollof Pasta", price: "4,000", img: "/jollof-pasta.jpg", alt: "Nigerian jollof pasta in tomato spice base" },
+          { name: "Jollof Pasta", price: "4,500", img: "/jollof-pasta.jpg", alt: "Nigerian jollof pasta in tomato spice base" },
           { name: "White Pasta / Tomato Sauce", price: "4,000", img: "/white-pasta-tomato-sauce.jpg", alt: "White pasta with rich tomato sauce" },
-          { name: "White Rice & Stew", price: "2,800", img: "/white-rice-stew.jpg", alt: "Steamed white rice with Nigerian stew" },
+          { name: "White Rice & Stew", price: "2,500", img: "/white-rice-stew.jpg", alt: "Steamed white rice with Nigerian stew" },
         ],
       },
       {
         name: "Milkshakes",
         items: [
-          { name: "Banana Cream Shake", price: "8,000", img: "/banana-milkshake.jpg", alt: "Banana cream milkshake with whipped topping" },
-          { name: "Strawberry Milkshake", price: "8,000", img: "/strawberry-milkshake.png", alt: "Pink strawberry milkshake with straw" },
-          { name: "Oreo Shake", price: "10,000", img: "/oreo-milkshake.png", alt: "Oreo cookie milkshake in tall glass" },
+          { name: "Banana Cream Shake", price: "10,000", img: "/banana-milkshake.jpg", alt: "Banana cream milkshake with whipped topping" },
+          { name: "Strawberry Milkshake", price: "10,000", img: "/strawberry-milkshake.png", alt: "Pink strawberry milkshake with straw" },
+          { name: "Oreo Shake", price: "12,000", img: "/oreo-milkshake.png", alt: "Oreo cookie milkshake in tall glass" },
           { name: "Chocolate Milkshake", price: "8,000", img: "/chocolate-milkshake.png", alt: "Rich chocolate milkshake with whipped cream" },
         ],
       },
@@ -197,7 +197,7 @@ const tiers: Tier[] = [
       {
         name: "Parfait & Toppings",
         items: [
-          { name: "Cup Parfait (350ml)", price: "5,000", img: "/cup-parfait.png", alt: "Layered yoghurt parfait cup with fruit" },
+          { name: "Cup Parfait (350ml)", price: "6,500", img: "/cup-parfait.png", alt: "Layered yoghurt parfait cup with fruit" },
           { name: "Granola Topping", price: "2,000", img: "/granola-toppings.jpg", alt: "Crunchy granola topping" },
           { name: "Almond Topping", price: "2,500", img: "/almond-topping.png", alt: "Sliced almond topping" },
           { name: "Cashew Nuts Topping", price: "2,000", img: "/cashew-nuts-toppings.png", alt: "Cashew nuts topping in bowl" },
