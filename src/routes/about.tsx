@@ -60,22 +60,15 @@ function AboutPage() {
       </section>
 
       <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10">
-            <img src={poolside.url} alt="Guests enjoying the poolside lounge at D' Valley's Arena Bori" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-            <div className="absolute bottom-0 p-10 md:p-16 max-w-2xl">
-              <p className="font-serif text-3xl md:text-4xl text-white leading-tight">
-                "We build spaces where connection happens naturally — and moments become memories."
-              </p>
-            </div>
+        <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10">
+            <img src="/dvalleys-staff.png" alt="D' Valley's Arena staff team in uniform" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
 
       <section className="section-dark py-24 border-t border-border">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-12 items-center">
-          <img src={diningSocial.url} alt="Community dining experience at D' Valley's Arena" className="w-full aspect-[4/5] object-cover rounded-sm border border-white/10" />
+          <img src="/sip-paint.png" alt="Sip and Paint event at D' Valley's Arena" className="w-full aspect-[4/5] object-cover rounded-sm border border-white/10" />
           <div>
             <span className="text-xs tracking-[0.4em] uppercase text-amber-glow">Global Trendsetters</span>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl text-white">Built for the ones who set the pace.</h2>
