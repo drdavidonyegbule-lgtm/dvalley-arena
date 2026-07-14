@@ -71,8 +71,7 @@ function EventsPage() {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
         <div className="relative z-10 h-full flex flex-col items-center justify-end text-center px-6 pb-20 pt-32">
-          <span className="text-xs tracking-[0.5em] uppercase text-amber-glow mb-4">Weekly Programming</span>
-          <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight max-w-4xl">High-energy nights.<br/><em className="text-amber-glow not-italic">Every single week.</em></h1>
+          <h1 className="font-serif text-sm md:text-base text-white/70 leading-tight max-w-4xl">High-energy nights. Every single week.</h1>
         </div>
       </section>
 
