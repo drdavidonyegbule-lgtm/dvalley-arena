@@ -118,9 +118,9 @@ function ContactPage() {
             </div>
 
             {[
-              { icon: Clock, title: "Response Window", copy: "48 hours — always." },
+              { icon: Clock, title: "Response Window", copy: "24 hours — always." },
               { icon: MapPin, title: "Location", copy: "D' Valley's Arena, No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State." },
-              { icon: Mail, title: "Direct Line", copy: "0906 752 7359" },
+              { icon: Mail, title: "Direct Line", copy: "0707 346 0398" },
             ].map((c) => (
               <div key={c.title} className="rounded-sm border border-white/10 bg-card p-6 flex gap-4">
                 <div className="shrink-0 w-10 h-10 rounded-full border border-amber-glow/40 grid place-items-center text-amber-glow"><c.icon size={16}/></div>
