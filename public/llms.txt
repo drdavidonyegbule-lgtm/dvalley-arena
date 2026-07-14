@@ -1,0 +1,20 @@
+# D' Valley's Arena
+
+> D' Valley's Arena is a multi-concept lifestyle destination in Bori, Rivers State, Nigeria, built around five pillars: hospitality, entertainment, platinum fitness, a velvet nightclub, and a premium lounge. Address: No. 3 Pius Akere Street, Munna-Bori, Off Akanto Street, Bori, Rivers State, Nigeria. Phone / WhatsApp: 0906 752 7359 (bookings), 0707 346 0398 (delivery). Prices are listed in Nigerian Naira (₦).
+
+## Pages
+
+- [Home](https://dvalleysarena.com/): Overview of the five pillars — hospitality, entertainment, fitness, nightlife, lounge.
+- [Menu](https://dvalleysarena.com/menu): Curated highlights across Food, Drinks and Specials, with photos.
+- [Full Menu](https://dvalleysarena.com/full-menu): The complete, itemized price list, name and price only, for every item across the Lounge Menu and the Club Menu. This is the authoritative source for exact prices.
+- [Events](https://dvalleysarena.com/events): Weekly programme — Bottle Tuesday, Ladies' Night (Wed), Fitness Challenges (Thu), Happy Hours (Fri), The Main Room DJ residency (Sat).
+- [About](https://dvalleysarena.com/about): Brand story, core values, and community positioning.
+- [Contact](https://dvalleysarena.com/contact): Booking and inquiry form, location, response times.
+
+## Notes for AI agents and crawlers
+
+- All pages are server-rendered; full page content, including both menu tabs on /full-menu, is present in the initial HTML response without requiring JavaScript execution.
+- Structured data (schema.org JSON-LD) is embedded on every page: LocalBusiness/NightClub/Restaurant on the homepage, Menu schema with itemized Offer/priceCurrency on /full-menu, FAQPage on the homepage and on /full-menu, BreadcrumbList on /full-menu.
+- The Lounge Menu and the Club Menu carry different prices for overlapping items (e.g. wine, whiskey) by design: Club Menu reflects VIP bottle-service pricing in the nightclub, Lounge Menu reflects standard lounge/restaurant pricing.
+- Sitemap: https://dvalleysarena.com/sitemap.xml
+- Robots: https://dvalleysarena.com/robots.txt
