@@ -63,7 +63,6 @@ function AboutPage() {
         <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10">
             <img src="/dvalleys-staff.png" alt="D' Valley's Arena staff team in uniform" className="w-full h-full object-cover" />
           </div>
-        </div>
       </section>
 
       <section className="section-dark py-24 border-t border-border">
