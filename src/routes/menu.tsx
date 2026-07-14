@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Bike, UtensilsCrossed, Wine, Sparkles } from "lucide-react";
+import { Bike, UtensilsCrossed, Wine, Sparkles, ScrollText } from "lucide-react";
 const deliveryBag = { url: "/delivery-bag.png" };
 const afangImg = { url: "/afang.jpg" };
 const bitterleafImg = { url: "/bitterleaf.jpg" };
@@ -260,6 +260,13 @@ function MenuPage() {
               </button>
             );
           })}
+          <Link
+            to="/full-menu"
+            className="flex items-center gap-2 px-5 md:px-7 py-3 rounded-sm border text-xs md:text-sm tracking-[0.3em] uppercase transition-all border-white/15 text-white/70 hover:text-white hover:border-white/40"
+          >
+            <ScrollText size={16} />
+            Full Menu
+          </Link>
         </div>
       </section>
 
