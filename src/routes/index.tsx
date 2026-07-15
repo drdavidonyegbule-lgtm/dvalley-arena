@@ -18,6 +18,7 @@ const scene34 = { url: "/scene-34.jpg" };
 const scene37 = { url: "/scene-37.jpg" };
 const parfaitHand = { url: "/boys.jpg" };
 const gymHex = { url: "/gym-hex.jpg" };
+const entranceGirls = { url: "/entrance-girls.jpg" };
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
