@@ -61,7 +61,7 @@ function AboutPage() {
 
       <section className="py-24">
         <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-white/10">
-            <img src="/dvalleys-staff.png" alt="D' Valley's Arena staff team in uniform" className="w-full h-full object-cover" />
+            <img src="/eatery.png" alt="D' Valley's Arena staff team in uniform" className="w-full h-full object-cover" />
           </div>
       </section>
 
