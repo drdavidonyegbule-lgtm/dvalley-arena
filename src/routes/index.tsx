@@ -55,7 +55,7 @@ const pillars = [
 
 const gallery = [
   clubEntrance.url, scene30.url, scene34.url, scene37.url,
-  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url, gymHex.url, parfaitHand.url,
+  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url, gymHex.url, parfaitHand.url, entranceGirls.url,
 ];
 
 function HomePage() {
