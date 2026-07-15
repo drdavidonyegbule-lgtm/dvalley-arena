@@ -24,12 +24,13 @@ export const Route = createFileRoute("/events")({
 });
 
 const weekly = [
-  { day: "Mon", title: "Recovery Sessions", tag: "Fitness", copy: "Guided cool-downs, mobility & recovery classes in the arena studio.", time: "6:00 PM" },
-  { day: "Tue", title: "Bottle Tuesday", tag: "Nightlife", copy: "Curated pours, half-price premium bottles for the early set.", time: "9:00 PM" },
-  { day: "Wed", title: "Ladies' Night", tag: "Signature", copy: "Complimentary cocktail flight, guest DJs and open-terrace lounge.", time: "8:00 PM" },
-  { day: "Thu", title: "Fitness Challenges", tag: "Fitness", copy: "Prize-winning strength & endurance nights coached by our elite team.", time: "7:00 PM" },
-  { day: "Fri", title: "Happy Hours", tag: "Lounge", copy: "Two-for-one signatures, small plates and rooftop sunset vibes.", time: "5:00 PM" },
-  { day: "Sat", title: "The Main Room", tag: "Nightlife", copy: "Headline DJ residency, bottle service and confetti drop at midnight.", time: "10:00 PM" },
+  { day: "Mon", title: "Karaoke", tag: "Lounge", copy: "Open mic, curated song book and a full house cheering every note.", time: "7:00 PM" },
+  { day: "Tue", title: "Football", tag: "The Arena Turf", copy: "Full-size, tournament-grade 5-a-side pitch under stadium lighting. Book leagues, private matches, or drop-in for open sessions.", time: "6:00 PM" },
+  { day: "Wed", title: "Baddies Night", tag: "Signature", copy: "Runway energy, guest DJs and a red-carpet welcome for the girls.", time: "9:00 PM" },
+  { day: "Thu", title: "Sip and Paint", tag: "Lifestyle", copy: "Guided canvases, signature cocktails and an easel for every guest.", time: "6:00 PM" },
+  { day: "Fri", title: "Hangover Friday", tag: "Lounge", copy: "Two-for-one signatures, small plates and rooftop sunset vibes.", time: "5:00 PM" },
+  { day: "Sat", title: "Snooker Challenge", tag: "Games", copy: "Bracket-style knockouts, prize pools and bragging rights on the felt.", time: "8:00 PM" },
+  { day: "Sun", title: "Classic Sunday", tag: "Signature", copy: "Relaxed family afternoons rolling into a curated evening set.", time: "5:00 PM" },
 ];
 
 const experiences = [
