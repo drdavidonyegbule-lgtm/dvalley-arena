@@ -12,13 +12,11 @@ const diningSocial = { url: "/dining-social.jpg" };
 const friends = { url: "/logo.png" };
 const gym = { url: "/gym.png" };
 const brandLogo = { url: "/dvalleys-logo-clean.png" };
-const scene25 = { url: "/scene-25.jpg" };
-const scene21 = { url: "/scene-21.jpg" };
-const scene23 = { url: "/scene-23.jpg" };
+const clubEntrance = { url: "/girls.jpg" };
 const scene30 = { url: "/scene-30.jpg" };
-const scene33 = { url: "/scene-33.jpg" };
 const scene34 = { url: "/scene-34.jpg" };
 const scene37 = { url: "/scene-37.jpg" };
+const parfaitHand = { url: "/boys.jpg" };
 const gymHex = { url: "/gym-hex.jpg" };
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +38,7 @@ export const Route = createFileRoute("/")({
 
 const heroSlides = [
   { img: building.url, tag: "The Arena" },
-  { img: scene25.url, tag: "D' Valley's Club" },
+  { img: clubEntrance.url, tag: "D' Valley's Club" },
   { img: dining.url, tag: "Hospitality" },
   { img: festival.url, tag: "Entertainment" },
   { img: poolside.url, tag: "Lounge" },
@@ -55,8 +53,8 @@ const pillars = [
 ];
 
 const gallery = [
-  scene21.url, scene23.url, scene30.url, scene33.url, scene34.url, scene37.url,
-  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url, gymHex.url,
+  clubEntrance.url, scene30.url, scene34.url, scene37.url,
+  poolside.url, cocktails.url, diningSocial.url, friends.url, festival.url, nightlife.url, gymHex.url, parfaitHand.url,
 ];
 
 function HomePage() {
